@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8669fc3b-1a74-4418-81dc-577063de0935" name="Changes" comment="Start of the Project">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
+    <list default="true" id="8669fc3b-1a74-4418-81dc-577063de0935" name="Changes" comment="End ıf the project.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ToDoList.py" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList.py" afterDir="false" />
     </list>
@@ -106,11 +104,20 @@
       <option name="project" value="LOCAL" />
       <updated>1715508029096</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="End ıf the project.">
+      <option name="closed" value="true" />
+      <created>1715717253421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715717253421</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start of the Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start of the Project" />
+    <MESSAGE value="End ıf the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="End ıf the project." />
   </component>
 </project>

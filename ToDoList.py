@@ -1,13 +1,17 @@
+#Here we are implementing the tkinter for access to GUI. also we implemented the unıttest lib.
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import unittest
 
+#Factory Design Pattern requires an interface to be designed for object creation and allows subclasses to create objects.
 class TaskFactory:
     """Factory Method for creating tasks."""
     @staticmethod
     def create_task(task_name):
         return task_name
 
+#guarantees that only one object can be generated from a class and
+#allows other classes to access this object (instead of generating new objects).
 class TaskManagerSingleton:
     """Singleton for managing tasks."""
     _instance = None
@@ -31,6 +35,7 @@ class TaskManagerSingleton:
         return self.tasks
 
 class ToDoListApp(tk.Tk):
+    #Constructor method,
     def __init__(self):
         super().__init__()
         self.title("To-Do")
@@ -63,6 +68,7 @@ class ToDoListApp(tk.Tk):
         self._load_task_button = tk.Button(self, text="Load Tasks", command=self._load_tasks)
         self._load_task_button.pack(pady=5)
 
+#Abstract classes are designed when there are many common properties and behaviors between classes.
     def _add_task(self):
         task = self._task_input.get()
         if task:
@@ -113,7 +119,9 @@ class ToDoListApp(tk.Tk):
                         self._tasks_list_box.insert(tk.END, task)
 
 #inheritence, advancedtodolistapp isimli subclass todolistappden miras aldı.
+# ayrıca alt sınıf, üst sınıfta bulunan metotları da miras almak isterse oriding
 class AdvancedToDoListApp(ToDoListApp):
+    #Technically, it is the ability of a superclass reference to hold all subclass objects. poly
     def _add_task(self):
         task = self._task_input.get()
         if task:
@@ -165,3 +173,6 @@ if __name__ == "__main__":
     app.mainloop()
     # Run the unit tests
     unittest.main(exit=False)
+
+#Multiple methods in a class can have the same name, but with different parameter lists. overload
+#bir alt sınıfın, üst sınıfında zaten tanımlanmış bir metot için belirli bir uygulama sağlaması durumudur. oriding.
